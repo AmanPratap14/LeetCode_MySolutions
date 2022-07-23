@@ -22,12 +22,14 @@ Output :
 from collections import deque
 
 def solve(n, nums, target):
-    # CODE HERE
-    dict_seen= {}
+    #using hashmap
+    dict_seen= {} #key-el , value-indexs
 
-    for i, el in enumerate(nums):
-        if target- el in dict_seen:
+    for i, el in enumerate(nums):#
+        if target- el in dict_seen:#checking if target-map is in map or not 
+            #if Yes, we find the indxs
             return [dict_seen[target-el], i]
+            #else store in map
         dict_seen[el]= i
 
 if __name__ == '__main__':
