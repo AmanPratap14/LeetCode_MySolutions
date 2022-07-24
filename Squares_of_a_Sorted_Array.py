@@ -17,6 +17,7 @@ def sortedSquares(nums):
     l, r= 0, len(nums)-1
 
     while l<=r:
+        #comparing the square and append in stack
         if nums[l] **2 < nums[r]**2:
             stack.append(nums[r]**2)
             r -=1
