@@ -5,8 +5,9 @@ sentence while still preserving whitespace and initial word order.
 Example 1:
 Input: s = "Let's take LeetCode contest"
 Output: "s'teL ekat edoCteeL tsetnoc"
-
+ 
 Example 2:
+
 Input: s = "God Ding"
 Output: "doG gniD"
 '''
